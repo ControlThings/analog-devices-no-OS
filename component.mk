@@ -1,0 +1,2 @@
+COMPONENT_ADD_INCLUDEDIRS=drivers/accel/adxl345
+COMPONENT_SRCDIRS=drivers/accel/adxl345
