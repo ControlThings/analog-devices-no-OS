@@ -72,7 +72,7 @@ int i2c_init(i2c_desc** target_dest, i2c_init_param* init_parm) {
     conf.sda_pullup_en = GPIO_PULLUP_ENABLE;
     conf.scl_io_num = SCL;
     conf.scl_pullup_en = GPIO_PULLUP_ENABLE;
-    conf.master.clk_speed = 100000; //Clock speed in hz
+    conf.master.clk_speed = 4*100000; //Clock speed in hz
     esp_err_t err = i2c_param_config(i2c_port, &conf);
     if (!err) err = i2c_driver_install(i2c_port, conf.mode, 0, 0, 0);
 
