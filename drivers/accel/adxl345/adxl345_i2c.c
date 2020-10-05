@@ -9,7 +9,7 @@
 
 #define TAG "adxl345_i2c"
 
-static const gpio_num_t SDA = GPIO_NUM_13;
+static const gpio_num_t SDA = GPIO_NUM_32;
 static const gpio_num_t SCL = GPIO_NUM_16;
 
 static const i2c_port_t i2c_port = I2C_NUM_0;
